@@ -1,8 +1,0 @@
-<ResourceDictionary
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="clr-namespace:ZhWpfLibrary.CustomControl">
-    <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="/ZhWpfLibrary.CustomControl;component/LoadingMask/LoadingMask.xaml" />
-    </ResourceDictionary.MergedDictionaries>
-</ResourceDictionary>
