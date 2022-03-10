@@ -1,0 +1,21 @@
+﻿<customcontrols:NoFrameWindow
+    x:Class="Test.TestNoFrameWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:customcontrols="clr-namespace:ZhWpfLibrary.CustomControls;assembly=ZhWpfLibrary.CustomControls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Test"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    WindowStyle="None"
+    mc:Ignorable="d">
+
+    <Grid>
+        <StackPanel>
+            <Button
+                Width="100"
+                Height="30"
+                Click="Button_Click"
+                Content="100" />
+        </StackPanel>
+    </Grid>
+</customcontrols:NoFrameWindow>
