@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZhWpfLibrary.UserControls",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZhWpfLibrary.CustomControls", "ZhWpfLibrary.CustomControls\ZhWpfLibrary.CustomControls.csproj", "{FA300F03-EC43-459B-BB1D-348915300989}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZhWpfLibrary.Behaviors", "ZhWpfLibrary.Behaviors\ZhWpfLibrary.Behaviors.csproj", "{947B8D4E-928A-4435-81CD-A047DC3174D2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{FA300F03-EC43-459B-BB1D-348915300989}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA300F03-EC43-459B-BB1D-348915300989}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA300F03-EC43-459B-BB1D-348915300989}.Release|Any CPU.Build.0 = Release|Any CPU
+		{947B8D4E-928A-4435-81CD-A047DC3174D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{947B8D4E-928A-4435-81CD-A047DC3174D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{947B8D4E-928A-4435-81CD-A047DC3174D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{947B8D4E-928A-4435-81CD-A047DC3174D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

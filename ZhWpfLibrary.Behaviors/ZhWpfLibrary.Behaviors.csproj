@@ -4,19 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E696C150-E45B-42EE-9290-E42374891D10}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
-    <RootNamespace>Test</RootNamespace>
-    <AssemblyName>Test</AssemblyName>
+    <ProjectGuid>{947B8D4E-928A-4435-81CD-A047DC3174D2}</ProjectGuid>
+    <OutputType>library</OutputType>
+    <RootNamespace>ZhWpfLibrary.Behaviors</RootNamespace>
+    <AssemblyName>ZhWpfLibrary.Behaviors</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -26,7 +24,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -54,61 +51,8 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <ApplicationDefinition Include="App.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </ApplicationDefinition>
-    <Compile Include="DragTestWindow.xaml.cs">
-      <DependentUpon>DragTestWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="TabControlTest.xaml.cs">
-      <DependentUpon>TabControlTest.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="TestNoFrameWindow.xaml.cs">
-      <DependentUpon>TestNoFrameWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Win32.cs" />
-    <Compile Include="Window1.xaml.cs">
-      <DependentUpon>Window1.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Window2.xaml.cs">
-      <DependentUpon>Window2.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="WindowAttached.cs" />
-    <Page Include="DragTestWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Compile Include="App.xaml.cs">
-      <DependentUpon>App.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Page Include="TabControlTest.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="TestNoFrameWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Window1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Window2.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-  </ItemGroup>
-  <ItemGroup>
+    <Compile Include="Drag\CanvasChildDragBehavior.cs" />
+    <Compile Include="Drag\ScrollViewerContentDragBehavior.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -132,27 +76,5 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ZhWpfLibrary.Assets\ZhWpfLibrary.Assets.csproj">
-      <Project>{299fd9c0-756b-480c-bd38-4f88de0e6e85}</Project>
-      <Name>ZhWpfLibrary.Assets</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ZhWpfLibrary.Behaviors\ZhWpfLibrary.Behaviors.csproj">
-      <Project>{947b8d4e-928a-4435-81cd-a047dc3174d2}</Project>
-      <Name>ZhWpfLibrary.Behaviors</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ZhWpfLibrary.CustomControls\ZhWpfLibrary.CustomControls.csproj">
-      <Project>{fa300f03-ec43-459b-bb1d-348915300989}</Project>
-      <Name>ZhWpfLibrary.CustomControls</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ZhWpfLibrary.UserControls\ZhWpfLibrary.UserControls.csproj">
-      <Project>{b2ef9f48-d4d3-439c-b787-f6e31dfa4a56}</Project>
-      <Name>ZhWpfLibrary.UserControls</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
